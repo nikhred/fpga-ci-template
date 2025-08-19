@@ -1,0 +1,17 @@
+project: fpga_ci_template_blinky
+vendor: xilinx
+sim:
+  test_pattern: "*"
+build:
+  top: top_level
+  part: xc7a35tcpg236-1  # Basys3; change for your board
+  constraints: ["constraints/top.xdc"]
+  timing:
+    wns_min_ns: 0.00
+deploy:
+  tftp:
+    enabled: false
+notify:
+  google_chat:
+    enabled: false
+
