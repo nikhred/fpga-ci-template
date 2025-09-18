@@ -1,4 +1,4 @@
-@Library('fpga-ci-lib@v0.1.0') _
+@Library('fpga-ci-lib@main') _
 pipeline {
   agent none
   stages {
